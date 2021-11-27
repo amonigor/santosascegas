@@ -1,0 +1,25 @@
+@import url(variables.css);
+
+.default-theme {
+    /* BODY */
+    --body-background: var(--dark-white);
+
+    /* NAVBAR */
+    --navbar-background: var(--dark-gray);
+    --navbar-text: var(--white);
+
+    /* FORM */
+    --input-background: var(--white);
+    --input-text: var(--black);
+    --input-border: var(--light-gray);
+    --date-label-text: var(--gray2);
+    --date-label-text-selected: var(--white);
+    --date-label-background: var(--dark-white);
+    --date-label-background-selected: var(--red);
+    --date-label-border: var(--gray2);
+    --date-label-border-selected: var(--red);
+    --date-clear-background: var(--transparent);
+    --date-clear-text: var(--red);
+    --submit-text: var(--white);
+    --submit-background: var(--red);
+}

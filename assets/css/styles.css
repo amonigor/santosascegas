@@ -1,0 +1,103 @@
+/* GOOGLE FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap'); /* Mochiy Pop P One */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap'); /* Nunito */
+
+/* CUSTOM VARIABLES IMPORT */
+@import url(colors.css);
+
+/* ALL ELEMENTS */
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--body-background);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--navbar-background);
+}
+.navbar-title {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: var(--navbar-text);
+}
+
+header h2 {
+    font-weight: bold;
+}
+
+main {
+    border-radius: 10px;
+    border: 1px solid var(--red);
+}
+
+/* FORM */
+.form-title {
+    font-weight: bold;
+    margin: 0;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+.form-input label {
+    margin-bottom: 0.5rem;
+}
+.form-input input {
+    background-color: var(--input-background);
+    color: var(--input-text);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    padding: 10px;
+}
+.form-dates {
+    display: flex;
+}
+.form-dates p {
+    padding: 0.5rem;
+    border: 2px solid var(--red);
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.form-date {
+    margin-left: 0.5rem;
+}
+.form-date label {
+    color: var(--date-label-text);
+    background-color: var(--date-label-background);
+    padding: 0.25rem 0.75rem;
+    border-radius: 10px;
+    border: 1px solid var(--date-label-border);
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-date input {
+    display: none;
+}
+.form-date label.selected {
+    color: var(--date-label-text-selected);
+    background-color: var(--date-label-background-selected);
+    border: 1px solid var(--date-label-border-selected);
+}
+.form-date-clear {
+    margin-left: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--date-clear-background);
+    color: var(--date-clear-text);
+    font-weight: bold;
+    border: none;
+}
+.form-date-clear.hidden {
+    display: none;
+}
+.form-submit {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--submit-background);
+    color: var(--submit-text);
+    border: none;
+    border-radius: 5px;
+}

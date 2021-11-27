@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,13 +12,164 @@
 
     <!-- OWN CSS IMPORT -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
 
-    <title>Santos às cegas</title>
+    <title>Santos às cegas | Agendamento </title>
 </head>
 
-<body>
-    <header></header>
-    <main></main>
+<body class="default-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/logo.png" alt="Santos às cegas" width="100" height="80"
+                    class="d-inline-block align-text-top">
+                <h1 class="navbar-title ms-3">Agendamento</h1>
+            </a>
+        </div>
+    </nav>
+
+    <header class="container my-4">
+        <h2>Preencha com suas informações</h2>
+        <p>Preencha o formulário abaixo com seus dados e escolha um dia para seu passeio</p>
+    </header>
+
+    <main class="container mb-5">
+        <form action="">
+            <section id="formInfo" class="p-3">
+                <div class="row">
+                    <p class="form-title">Dados:</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form-input my-4">
+                            <label for="name">
+                                <i class="fas fa-user mx-2"></i>
+                                Nome
+                            </label>
+                            <input type="text" name="name" id="name" placeholder="Ex: José Vitor"/>
+                        </div>
+
+                        <div class="form-input my-4">
+                            <label for="doc">
+                                <i class="fas fa-id-card mx-2"></i>
+                                RG ou RNE
+                            </label>
+                            <input type="text" name="doc" id="doc" placeholder="XX.XXX.XXX-X"/>
+                        </div>
+
+                        <div class="form-input my-4">
+                            <label for="phone">
+                                <i class="fas fa-phone-alt mx-2"></i>
+                                Telefone
+                            </label>
+                            <input type="tel" name="phone" id="phone" placeholder="(XX) XXXXX-XXXX"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form-input my-4">
+                            <label for="age">
+                                <i class="fas fa-birthday-cake mx-2"></i>
+                                Idade
+                            </label>
+                            <input type="number" name="age" id="age" placeholder="XX anos"/>
+                        </div>
+
+                        <div class="form-input my-4">
+                            <label for="email">
+                                <i class="fas fa-envelope mx-2"></i>
+                                E-mail
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="exemplo@email.com"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formDate" class="p-3">
+                <div class="row">
+                    <p class="form-title">Escolha um horário:</p>
+                </div>
+                <div class="row">
+                    <div id="dateBox1" class="form-dates align-items-center my-3">
+                        <p>25 de outubro</p>
+                        <div class="form-date">
+                            <label class="date-label" for="date11" id="dateLabel11" data-id="11" data-parent="1">10:00</label>
+                            <input class="date-check" type="checkbox" name="date11" id="date11" data-id="11" data-parent="1"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date12" id="dateLabel12" data-id="12" data-parent="1">11:00</label>
+                            <input class="date-check" type="checkbox" name="date12" id="date12" data-id="12" data-parent="1"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date13" id="dateLabel13" data-id="13" data-parent="1">12:00</label>
+                            <input class="date-check" type="checkbox" name="date13" id="date13" data-id="13" data-parent="1"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date14" id="dateLabel14" data-id="14" data-parent="1">13:00</label>
+                            <input class="date-check" type="checkbox" name="date14" id="date14" data-id="14" data-parent="1"/>
+                        </div>
+                        <button id="dateClear1" class="form-date-clear date-clear hidden" type="button" data-parent="1">
+                            <i class="far fa-times-circle"></i>
+                            Limpar seleção
+                        </button>
+                    </div>
+
+                    <div id="dateBox2" class="form-dates align-items-center my-3">
+                        <p>26 de outubro</p>
+                        <div class="form-date">
+                            <label class="date-label" for="date21" id="dateLabel21" data-id="21" data-parent="1">10:00</label>
+                            <input class="date-check" type="checkbox" name="date21" id="date21" data-id="21" data-parent="2"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date22" id="dateLabel22" data-id="22" data-parent="1">11:00</label>
+                            <input class="date-check" type="checkbox" name="date22" id="date22" data-id="22" data-parent="2"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date23" id="dateLabel23" data-id="23" data-parent="1">12:00</label>
+                            <input class="date-check" type="checkbox" name="date23" id="date23" data-id="23" data-parent="2"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date24" id="dateLabel24" data-id="24" data-parent="1">13:00</label>
+                            <input class="date-check" type="checkbox" name="date24" id="date24" data-id="24" data-parent="2"/>
+                        </div>
+                        <button id="dateClear2" class="form-date-clear date-clear hidden" type="button" data-parent="2">
+                            <i class="far fa-times-circle"></i>
+                            Limpar seleção
+                        </button>
+                    </div>
+
+                    <div id="dateBox3" class="form-dates align-items-center my-3">
+                        <p>27 de outubro</p>
+                        <div class="form-date">
+                            <label class="date-label" for="date31" id="dateLabel31" data-id="31" data-parent="1">10:00</label>
+                            <input class="date-check" type="checkbox" name="date31" id="date31" data-id="31" data-parent="3"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date32" id="dateLabel32" data-id="32" data-parent="1">11:00</label>
+                            <input class="date-check" type="checkbox" name="date32" id="date32" data-id="32" data-parent="3"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date33" id="dateLabel33" data-id="33" data-parent="1">12:00</label>
+                            <input class="date-check" type="checkbox" name="date33" id="date33" data-id="33" data-parent="3"/>
+                        </div>
+                        <div class="form-date">
+                            <label class="date-label" for="date34" id="dateLabel34" data-id="34" data-parent="1">13:00</label>
+                            <input class="date-check" type="checkbox" name="date34" id="date34" data-id="34" data-parent="3"/>
+                        </div>
+                        <button id="dateClear3" class="form-date-clear date-clear hidden" type="button" data-parent="3">
+                            <i class="far fa-times-circle"></i>
+                            Limpar seleção
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formButtons" class="p-3 d-flex justify-content-end">
+                <input class="form-submit" type="submit" value="Próximo">
+            </section>
+        </form>
+    </main>
+    
     <footer></footer>
     
     <!-- BOOTSTRAP IMPORT -->
@@ -32,5 +183,6 @@
         crossorigin="anonymous"></script>
     
     <!-- OWN JAVASCRIPT IMPORT -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
