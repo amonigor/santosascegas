@@ -53,6 +53,7 @@ main {
 }
 .form-dates {
     display: flex;
+    flex-wrap: wrap;
 }
 .form-dates p {
     padding: 0.5rem;
@@ -74,6 +75,7 @@ main {
     border: 1px solid var(--date-label-border);
     font-weight: bold;
     cursor: pointer;
+    margin: 0.5rem 0;
 }
 .form-date input {
     display: none;
@@ -100,4 +102,12 @@ main {
     color: var(--submit-text);
     border: none;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-dates p {
+        padding: 0.5rem;
+        border: none;
+        width: 100%;
+    }
 }
