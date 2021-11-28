@@ -1,0 +1,186 @@
+/* CUSTOM VARIABLES IMPORT */
+@import url(colors.css);
+@import url(fonts.css);
+
+.accessibility-button {
+    position: fixed;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    right: 0;
+    top: 0;
+    background-color: var(--accessability-menu-background1);
+    color: var(--accessability-menu-text);
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.accessability-menu {
+    position: fixed;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    right: 0;
+    top: 0;
+    background-color: var(--accessability-menu-background2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.accessability-menu-title {
+    background-color: var(--accessability-menu-background1);
+    color: var(--accessability-menu-text);
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.accessability-menu-title p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.accessability-section {
+    background-color: var(--accessability-menu-section-background);
+    border-radius: 10px;
+}
+
+.accessability-section-title {
+    font-weight: bolder;
+}
+
+.default-font {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.dyslexic-font {
+    font-family: 'Open Dyslexic' !important;
+}
+
+.accessability-option {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.accessability-option p {
+    margin: 0;
+}
+
+.accessability-option.high-contrast {
+    background-color: var(--black);
+    padding: 0.30rem;
+    border-radius: 10px;
+}
+
+.accessability-option.high-contrast p {
+    color: var(--yellow);
+}
+
+.font-check {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.font-option {
+    margin-left: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--white);
+    color: var(--light-gray);
+    border-radius: 10px;
+    border: 2px solid var(--light-gray);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.font-option.selected {
+    background-color: var(--gray);
+    color: var(--white);
+    border: 2px solid var(--dark-gray2);
+}
+
+.font-buttons {
+    margin-left: 0.5rem;
+    background-color: var(--accessability-menu-background1);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    color: var(--accessability-menu-text);
+    font-weight: bold;
+}
+
+.accessability-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+    margin-left: 0.5rem;
+}
+.accessability-option.high-contrast .accessability-switch {
+    height: 30px;
+    width: 50px;
+}
+
+.accessability-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.accessability-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accessability-slider-track);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+.accessability-option.high-contrast .accessability-switch .accessability-slider {
+    background-color: var(--black);
+    border: 1px solid var(--yellow);
+}
+
+.accessability-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--accessability-slider-indicator);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+.accessability-option.high-contrast .accessability-switch .accessability-slider:before {
+    background-color: var(--yellow);
+}
+
+.accessability-switch input:checked + .accessability-slider {
+    background-color: var(--accessability-slider-track-fill);
+}
+.accessability-option.high-contrast .accessability-switch input:checked + .accessability-slider {
+    background-color: var(--yellow);
+}
+.accessability-option.high-contrast .accessability-switch input:checked + .accessability-slider:before {
+    background-color: var(--black);
+}
+
+.accessability-switch input:focus + .accessability-slider {
+    box-shadow: 0 0 1px var(--accessability-slider-track-fill);
+}
+
+.accessability-switch input:checked + .accessability-slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}

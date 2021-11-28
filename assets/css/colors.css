@@ -4,12 +4,27 @@
     /* BODY */
     --body-background: var(--dark-white);
 
-    /* HEADER */
-    --email-link: var(--red);
-
     /* NAVBAR */
     --navbar-background: var(--dark-gray);
     --navbar-text: var(--white);
+
+    /* ACCESSABILITY MENU */
+    --accessability-menu-background1: var(--light-blue);
+    --accessability-menu-background2: var(--white);
+    --accessability-menu-text: var(--white);
+    --accessability-menu-section-background: var(--light-gray2);
+    --font-option-text: var(--light-gray);
+    --font-option-border: var(--light-gray);
+    --font-option-background: var(--white);
+    --font-option-text-selected: var(--white);
+    --font-option-border-selected: var(--dark-gray2);
+    --font-option-background-selected: var(--gray);
+    --accessability-slider-track: var(--light-gray);
+    --accessability-slider-indicator: var(--white);
+    --accessability-slider-track-fill: var(--light-blue);
+
+    /* HEADER */
+    --email-link: var(--red);
 
     /* FORM */
     --input-background: var(--white);

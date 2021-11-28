@@ -1,12 +1,14 @@
 :root {
     --dark-gray: #2A2E2E;
+    --dark-gray2: #4A4A4A;
     --gray: #6A6A6A;
     --gray2: #5D5D5D;
     --light-gray: #BCBCBC;
+    --light-gray2: #ECECEC;
     --white: #FFFFFF;
     --dark-white: #F5F5F5;
     --red: #E30613;
-    --light-blue: #22CFFE;
+    --light-blue: #16a1c7;
     --yellow: #FFE600;
     --black: #000000;
     --transparent: rgba(0, 0, 0, 0);
