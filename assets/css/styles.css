@@ -27,6 +27,10 @@ header h2 {
     font-weight: bold;
 }
 
+header p a {
+    color: var(--email-link);
+}
+
 main {
     border-radius: 10px;
     border: 1px solid var(--red);

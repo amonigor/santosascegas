@@ -4,6 +4,9 @@
     /* BODY */
     --body-background: var(--dark-white);
 
+    /* HEADER */
+    --email-link: var(--red);
+
     /* NAVBAR */
     --navbar-background: var(--dark-gray);
     --navbar-text: var(--white);
