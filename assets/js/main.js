@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    // Load settings from local storage
+    const font = localStorage.getItem("font");
+    if (font == "default" || font == null) {
+        $("#defaultFontLabel").addClass("selected");
+        $("#dyslexicFontLabel").removeClass("selected");
+        $(document.body).addClass("default-font");
+        $(document.body).removeClass("dyslexic-font");
+    } else if (font == "dyslexic") {
+        $("#dyslexicFontLabel").addClass("selected");
+        $("#defaultFontLabel").removeClass("selected");
+        $(document.body).addClass("dyslexic-font");
+        $(document.body).removeClass("default-font");
+    }
+
     $(".date-check").change(function () {
         const id = $(this).data("id");
         const idParent = $(this).data("parent");
@@ -69,11 +83,14 @@ $(document).ready(function () {
             $("#dyslexicFontLabel").removeClass("selected");
             $(document.body).addClass("default-font");
             $(document.body).removeClass("dyslexic-font");
+            localStorage.setItem("font", "default");
+
         } else if (type == "dyslexic") {
             $("#dyslexicFontLabel").addClass("selected");
             $("#defaultFontLabel").removeClass("selected");
             $(document.body).addClass("dyslexic-font");
             $(document.body).removeClass("default-font");
+            localStorage.setItem("font", "dyslexic");
         }
     });
 });
