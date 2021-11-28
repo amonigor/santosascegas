@@ -12,12 +12,13 @@
 
     <!-- OWN CSS IMPORT -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/accessability.css">
     <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon">
 
     <title>Santos às cegas | Agendamento </title>
 </head>
 
-<body class="default-theme">
+<body class="default-theme default-font">
     <nav class="navbar">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="/">
@@ -43,11 +44,11 @@
                 <div class="accessability-option">
                     <p>estilo:</p>
 
-                    <label class="font-option default-font selected" for="defaultFont">padrão</label>
-                    <input class="font-check" type="checkbox" name="defaultFont" id="defaultFont">
+                    <label id="defaultFontLabel" class="font-option default-font selected" for="defaultFont">padrão</label>
+                    <input class="font-check" type="checkbox" name="defaultFont" id="defaultFont" data-type="default">
 
-                    <label class="font-option dyslexic-font" for="dyslexicFont">disléxico</label>
-                    <input class="font-check" type="checkbox" name="dyslexicFont" id="dyslexicFont">
+                    <label id="dyslexicFontLabel" class="font-option dyslexic-font" for="dyslexicFont">disléxico</label>
+                    <input class="font-check" type="checkbox" name="dyslexicFont" id="dyslexicFont" data-type="dyslexic">
                 </div>
 
                 <div class="accessability-option">
