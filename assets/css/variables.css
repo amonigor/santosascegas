@@ -8,8 +8,10 @@
     --white: #FFFFFF;
     --dark-white: #F5F5F5;
     --red: #E30613;
+    --pink: #e306c5;
     --light-blue: #16a1c7;
     --yellow: #FFE600;
+    --light-black: #161616;
     --black: #000000;
     --transparent: rgba(0, 0, 0, 0);
 }

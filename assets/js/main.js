@@ -1,6 +1,8 @@
 $(document).ready(function () {
     // Load settings from local storage
     const font = localStorage.getItem("font");
+    const theme = localStorage.getItem("theme");
+
     if (font == "default" || font == null) {
         $("#defaultFontLabel").addClass("selected");
         $("#dyslexicFontLabel").removeClass("selected");
@@ -11,6 +13,18 @@ $(document).ready(function () {
         $("#defaultFontLabel").removeClass("selected");
         $(document.body).addClass("dyslexic-font");
         $(document.body).removeClass("default-font");
+    }
+
+    if (theme == "default" || theme == null) {
+        $(document.body).addClass("default-font");
+    } else if (theme == "dark") {
+        $("#darkmode").prop("checked", true);
+        $(document.body).addClass("dark-theme");
+        $(document.body).removeClass("default-theme");
+    } else if (theme == "highcontrast") {
+        $("#highcontrast").prop("checked", true);
+        $(document.body).addClass("highcontrast-theme");
+        $(document.body).removeClass("default-theme");
     }
 
     $(".date-check").change(function () {
@@ -91,6 +105,33 @@ $(document).ready(function () {
             $(document.body).addClass("dyslexic-font");
             $(document.body).removeClass("default-font");
             localStorage.setItem("font", "dyslexic");
+        }
+    });
+
+    $("#darkmode").change(function () {
+        if ($("#darkmode").is(":checked")) {
+            $("#highcontrast").prop("checked", false);
+            $(document.body).addClass("dark-theme");
+            $(document.body).removeClass("highcontrast-theme");
+            $(document.body).removeClass("default-theme");
+            localStorage.setItem("theme", "dark");
+        } else {
+            $(document.body).addClass("default-theme");
+            $(document.body).removeClass("dark-theme");
+            localStorage.setItem("theme", "default");
+        }
+    });
+    $("#highcontrast").change(function () {
+        if ($("#highcontrast").is(":checked")) {
+            $("#darkmode").prop("checked", false);
+            $(document.body).addClass("highcontrast-theme");
+            $(document.body).removeClass("dark-theme");
+            $(document.body).removeClass("default-theme");
+            localStorage.setItem("theme", "highcontrast");
+        } else {
+            $(document.body).addClass("default-theme");
+            $(document.body).removeClass("highcontrast-theme");
+            localStorage.setItem("theme", "default");
         }
     });
 });

@@ -3,6 +3,7 @@
 .default-theme {
     /* BODY */
     --body-background: var(--dark-white);
+    --general-text: var(--black);
 
     /* NAVBAR */
     --navbar-background: var(--dark-gray);
@@ -26,6 +27,9 @@
     /* HEADER */
     --email-link: var(--red);
 
+    /* MAIN */
+    --main-border: var(--red);
+
     /* FORM */
     --input-background: var(--white);
     --input-text: var(--black);
@@ -38,7 +42,104 @@
     --date-label-border-selected: var(--red);
     --date-clear-background: var(--transparent);
     --date-clear-text: var(--red);
+    --date-border: var(--red);
     --submit-text: var(--white);
     --submit-background: var(--red);
     --radio-color: var(--red);
+}
+
+.dark-theme {
+    /* BODY */
+    --body-background: var(--light-black);
+    --general-text: var(--white);
+
+    /* NAVBAR */
+    --navbar-background: var(--dark-gray);
+    --navbar-text: var(--white);
+
+    /* ACCESSABILITY MENU */
+    --accessability-menu-background1: var(--light-blue);
+    --accessability-menu-background2: var(--black);
+    --accessability-menu-text: var(--white);
+    --accessability-menu-section-background: var(--light-black);
+    --font-option-text: var(--light-gray);
+    --font-option-border: var(--light-gray);
+    --font-option-background: var(--light-black);
+    --font-option-text-selected: var(--white);
+    --font-option-border-selected: var(--dark-gray2);
+    --font-option-background-selected: var(--gray);
+    --accessability-slider-track: var(--light-gray);
+    --accessability-slider-indicator: var(--white);
+    --accessability-slider-track-fill: var(--light-blue);
+
+    /* HEADER */
+    --email-link: var(--red);
+
+    /* MAIN */
+    --main-border: var(--red);
+
+    /* FORM */
+    --input-background: var(--light-black);
+    --input-text: var(--white);
+    --input-border: var(--light-gray);
+    --date-label-text: var(--white);
+    --date-label-text-selected: var(--white);
+    --date-label-background: var(--light-black);
+    --date-label-background-selected: var(--red);
+    --date-label-border: var(--white);
+    --date-label-border-selected: var(--red);
+    --date-clear-background: var(--transparent);
+    --date-clear-text: var(--red);
+    --date-border: var(--red);
+    --submit-text: var(--white);
+    --submit-background: var(--red);
+    --radio-color: var(--red);
+}
+
+.highcontrast-theme {
+    /* BODY */
+    --body-background: var(--black);
+    --general-text: var(--yellow);
+
+    /* NAVBAR */
+    --navbar-background: var(--light-black);
+    --navbar-text: var(--yellow);
+
+    /* ACCESSABILITY MENU */
+    --accessability-menu-background1: var(--pink);
+    --accessability-menu-background2: var(--light-black);
+    --accessability-menu-text: var(--black);
+    --accessability-menu-section-background: var(--black);
+    --font-option-text: var(--pink);
+    --font-option-border: var(--pink);
+    --font-option-background: var(--light-black);
+    --font-option-text-selected: var(--black);
+    --font-option-border-selected: var(--pink);
+    --font-option-background-selected: var(--pink);
+    --accessability-slider-track: var(--light-black);
+    --accessability-slider-indicator: var(--white);
+    --accessability-slider-track-fill: var(--light-blue);
+
+    /* HEADER */
+    --email-link: var(--pink);
+
+    /* MAIN */
+    --main-border: var(--pink);
+
+    /* FORM */
+    --input-background: var(--blak);
+    --input-text: var(--yellow);
+    --input-border: var(--pink);
+    --date-label-text: var(--yellow);
+    --date-label-text-selected: var(--white);
+    --date-label-background: var(--black);
+    --date-label-background-selected: var(--pink);
+    --date-label-border: var(--yellow);
+    --date-label-border-selected: var(--pink);
+    --date-clear-background: var(--transparent);
+    --date-clear-text: var(--pink);
+    --date-border: var(--pink);
+    --submit-text: var(--white);
+    --submit-background: var(--pink);
+    --radio-color: var(--pink);
 }

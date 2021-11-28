@@ -5,6 +5,7 @@
 /* ALL ELEMENTS */
 * {
     font-family: var(--font);
+    color: var(--general-text);
 }
 
 body {
@@ -30,7 +31,7 @@ header p a {
 
 main {
     border-radius: 10px;
-    border: 1px solid var(--red);
+    border: 1px solid var(--main-border);
 }
 
 /* FORM */
@@ -58,7 +59,7 @@ main {
 }
 .form-dates p {
     padding: 0.5rem;
-    border: 2px solid var(--red);
+    border: 2px solid var(--date-border);
     border-bottom: 0;
     border-top: 0;
     border-left: 0;
@@ -95,6 +96,9 @@ main {
     color: var(--date-clear-text);
     font-weight: bold;
     border: none;
+}
+.form-date-clear i {
+    color: var(--date-clear-text);
 }
 .form-date-clear.hidden {
     display: none;

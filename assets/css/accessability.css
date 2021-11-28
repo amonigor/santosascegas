@@ -17,6 +17,9 @@
     -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25); 
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
 }
+.accessibility-button i {
+    color: var(--accessability-menu-text);
+}
 
 .accessability-menu {
     position: fixed;
@@ -42,6 +45,11 @@
     width: 100%;
     text-align: center;
     font-weight: bold;
+    color: var(--accessability-menu-text);
+}
+
+.accessability-menu-title p i {
+    color: var(--accessability-menu-text);
 }
 
 .accessability-section {
@@ -90,18 +98,18 @@
 .font-option {
     margin-left: 0.5rem;
     padding: 0.25rem 0.75rem;
-    background-color: var(--white);
-    color: var(--light-gray);
+    background-color: var(--font-option-background);
+    color: var(--font-option-text);
     border-radius: 10px;
-    border: 2px solid var(--light-gray);
+    border: 2px solid var(--font-option-border);
     cursor: pointer;
     font-weight: bold;
 }
 
 .font-option.selected {
-    background-color: var(--gray);
-    color: var(--white);
-    border: 2px solid var(--dark-gray2);
+    background-color: var(--font-option-background-selected);
+    color: var(--font-option-text-selected);
+    border: 2px solid var(--font-option-border-selected);
 }
 
 .font-buttons {
