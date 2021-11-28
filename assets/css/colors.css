@@ -22,4 +22,5 @@
     --date-clear-text: var(--red);
     --submit-text: var(--white);
     --submit-background: var(--red);
+    --radio-color: var(--red);
 }

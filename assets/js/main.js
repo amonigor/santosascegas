@@ -47,4 +47,9 @@ $(document).ready(function () {
         });
         $(this).hide("fast");
     });
+
+    $("#form").on("submit", function (evt) {
+        evt.preventDefault();
+        window.location.href = "consentimento.html";
+    });
 });

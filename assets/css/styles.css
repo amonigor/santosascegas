@@ -103,6 +103,13 @@ main {
     border: none;
     border-radius: 5px;
 }
+.form-question {
+    font-weight: bold;
+    margin-top: 0;
+}
+.form-radio {
+    accent-color: var(--radio-color);
+}
 
 @media only screen and (max-width: 768px) {
     .form-dates p {
