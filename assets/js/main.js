@@ -52,4 +52,28 @@ $(document).ready(function () {
         evt.preventDefault();
         window.location.href = "consentimento.html";
     });
+
+    // ACCESSABILITY
+    $("#accessabilityCaller").click(function () {
+        $("#accessabilityMenu").show("fast");
+    });
+    $("#accessabilityMenu").mouseleave(function() {
+        $("#accessabilityMenu").hide("fast");
+    });
+
+    $(".font-check").change(function () {
+        const type = $(this).data("type");
+        
+        if (type == "default") {
+            $("#defaultFontLabel").addClass("selected");
+            $("#dyslexicFontLabel").removeClass("selected");
+            $(document.body).addClass("default-font");
+            $(document.body).removeClass("dyslexic-font");
+        } else if (type == "dyslexic") {
+            $("#dyslexicFontLabel").addClass("selected");
+            $("#defaultFontLabel").removeClass("selected");
+            $(document.body).addClass("dyslexic-font");
+            $(document.body).removeClass("default-font");
+        }
+    });
 });

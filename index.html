@@ -30,11 +30,11 @@
     </nav>
 
     <!-- ACCESSABILITY MENU -->
-    <button class="accessibility-button">
+    <button id="accessabilityCaller" class="accessibility-button">
         <i class="fas fa-universal-access me-2"></i>
         Acessabilidade
     </button>
-    <div class="accessability-menu">
+    <div id="accessabilityMenu" class="accessability-menu">
         <div class="accessability-menu-title">
             <p><i class="fas fa-universal-access me-2"></i>Acessabilidade</p>
         </div>
@@ -44,11 +44,11 @@
                 <div class="accessability-option">
                     <p>estilo:</p>
 
-                    <label class="font-option default-font selected" for="defaultFont">padrão</label>
-                    <input class="font-check" type="checkbox" name="defaultFont" id="defaultFont">
+                    <label id="defaultFontLabel" class="font-option default-font selected" for="defaultFont">padrão</label>
+                    <input class="font-check" type="checkbox" name="defaultFont" id="defaultFont" data-type="default">
 
-                    <label class="font-option dyslexic-font" for="dyslexicFont">disléxico</label>
-                    <input class="font-check" type="checkbox" name="dyslexicFont" id="dyslexicFont">
+                    <label id="dyslexicFontLabel" class="font-option dyslexic-font" for="dyslexicFont">disléxico</label>
+                    <input class="font-check" type="checkbox" name="dyslexicFont" id="dyslexicFont" data-type="dyslexic">
                 </div>
 
                 <div class="accessability-option">

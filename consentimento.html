@@ -29,10 +29,54 @@
     </nav>
 
     <!-- ACCESSABILITY MENU -->
-    <button class="accessibility-button">
-        <i class="fas fa-universal-access"></i>
+    <button id="accessabilityCaller" class="accessibility-button">
+        <i class="fas fa-universal-access me-2"></i>
         Acessabilidade
     </button>
+    <div id="accessabilityMenu" class="accessability-menu">
+        <div class="accessability-menu-title">
+            <p><i class="fas fa-universal-access me-2"></i>Acessabilidade</p>
+        </div>
+        <div class="accessability-menu-content p-2">
+            <div class="accessability-section p-2 mb-2">
+                <p class="accessability-section-title"><i class="fas fa-text-height"></i> Fonte</p>
+                <div class="accessability-option">
+                    <p>estilo:</p>
+
+                    <label class="font-option default-font selected" for="defaultFont">padrão</label>
+                    <input class="font-check" type="checkbox" name="defaultFont" id="defaultFont">
+
+                    <label class="font-option dyslexic-font" for="dyslexicFont">disléxico</label>
+                    <input class="font-check" type="checkbox" name="dyslexicFont" id="dyslexicFont">
+                </div>
+
+                <div class="accessability-option">
+                    <p>tamanho:</p>
+
+                    <button class="font-buttons" id="minusFont">-a</button>
+                    <button class="font-buttons" id="plusFont">A+</button>
+                </div>
+            </div>
+
+            <div class="accessability-section p-2">
+                <p class="accessability-section-title"><i class="fas fa-adjust"></i> Coloração</p>
+                <div class="accessability-option high-contrast">
+                    <p>alto contraste:</p>
+                    <label class="accessability-switch">
+                        <input type="checkbox" name="highcontrast" id="highcontrast">
+                        <span class="accessability-slider round"></span>
+                    </label>
+                </div>
+                <div class="accessability-option">
+                    <p>modo escuro:</p>
+                    <label class="accessability-switch">
+                        <input type="checkbox" name="darkmode" id="darkmode">
+                        <span class="accessability-slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="container my-4">
         <h2>Consentimento de Participação</h2>
