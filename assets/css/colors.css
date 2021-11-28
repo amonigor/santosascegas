@@ -14,6 +14,7 @@
     --accessability-menu-background2: var(--white);
     --accessability-menu-text: var(--white);
     --accessability-menu-section-background: var(--light-gray2);
+    --font-button-selected: var(--blue);
     --font-option-text: var(--light-gray);
     --font-option-border: var(--light-gray);
     --font-option-background: var(--white);
@@ -62,6 +63,7 @@
     --accessability-menu-background2: var(--black);
     --accessability-menu-text: var(--white);
     --accessability-menu-section-background: var(--light-black);
+    --font-button-selected: var(--blue);
     --font-option-text: var(--light-gray);
     --font-option-border: var(--light-gray);
     --font-option-background: var(--light-black);
@@ -110,6 +112,7 @@
     --accessability-menu-background2: var(--light-black);
     --accessability-menu-text: var(--black);
     --accessability-menu-section-background: var(--black);
+    --font-button-selected: var(--yellow);
     --font-option-text: var(--pink);
     --font-option-border: var(--pink);
     --font-option-background: var(--light-black);

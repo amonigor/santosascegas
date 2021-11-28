@@ -25,3 +25,21 @@
 .dyslexic-font {
     --font: var('Open Dyslexic');
 }
+
+.default-font-size {
+    --accessability-text-size: 1rem;
+    --header-title: 2rem;
+    --general: 1rem;
+}
+
+.large-font-size {
+    --accessability-text-size: 1.25rem;
+    --header-title: 2.25rem;
+    --general: 1.25rem;
+}
+
+.extra-large-font-size {
+    --accessability-text-size: 1.5rem;
+    --header-title: 2.5rem;
+    --general: 1.5rem;
+}

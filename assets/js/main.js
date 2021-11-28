@@ -2,6 +2,7 @@ $(document).ready(function () {
     // Load settings from local storage
     const font = localStorage.getItem("font");
     const theme = localStorage.getItem("theme");
+    const size = localStorage.getItem("size");
 
     if (font == "default" || font == null) {
         $("#defaultFontLabel").addClass("selected");
@@ -25,6 +26,21 @@ $(document).ready(function () {
         $("#highcontrast").prop("checked", true);
         $(document.body).addClass("highcontrast-theme");
         $(document.body).removeClass("default-theme");
+    }
+
+    if (size == "default" || size == null) {
+        $("#regularFont").addClass("selected");
+        $(document.body).addClass("default-font-size");
+    } else if (size == "large") {
+        $("#largeFont").addClass("selected");
+        $("#regularFont").removeClass("selected");
+        $(document.body).addClass("large-font-size");
+        $(document.body).removeClass("default-font-size");
+    } else if (size == "extra-large") {
+        $("#extraLargeFont").addClass("selected");
+        $("#regularFont").removeClass("selected");
+        $(document.body).addClass("extra-large-font-size");
+        $(document.body).removeClass("default-font-size");
     }
 
     $(".date-check").change(function () {
@@ -133,5 +149,33 @@ $(document).ready(function () {
             $(document.body).removeClass("highcontrast-theme");
             localStorage.setItem("theme", "default");
         }
+    });
+
+    $("#regularFont").click(function () {
+        $(this).addClass("selected");
+        $("#largeFont").removeClass("selected");
+        $("#extraLargeFont").removeClass("selected");
+        $(document.body).addClass("default-font-size");
+        $(document.body).removeClass("large-font-size");
+        $(document.body).removeClass("extra-large-font-size");
+        localStorage.setItem("size", "default");
+    });
+    $("#largeFont").click(function () {
+        $(this).addClass("selected");
+        $("#regularFont").removeClass("selected");
+        $("#extraLargeFont").removeClass("selected");
+        $(document.body).addClass("large-font-size");
+        $(document.body).removeClass("default-font-size");
+        $(document.body).removeClass("extra-large-font-size");
+        localStorage.setItem("size", "large");
+    });
+    $("#extraLargeFont").click(function () {
+        $(this).addClass("selected");
+        $("#regularFont").removeClass("selected");
+        $("#largeFont").removeClass("selected");
+        $(document.body).addClass("extra-large-font-size");
+        $(document.body).removeClass("default-font-size");
+        $(document.body).removeClass("large-font-size");
+        localStorage.setItem("size", "extra-large");
     });
 });
