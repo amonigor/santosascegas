@@ -45,11 +45,11 @@ $(document).ready(function () {
 
     if ($(window).scrollTop() < 96) {
         const marginTop = 112 - $(window).scrollTop();
-        $("#accessabilityCaller").attr("style", `top: ${marginTop}px`);
-        $("#accessabilityMenu").attr("style", `top: ${marginTop}px`);
+        $("#accessibilityCaller").attr("style", `top: ${marginTop}px`);
+        $("#accessibilityMenu").attr("style", `top: ${marginTop}px`);
     } else {
-        $("#accessabilityCaller").attr("style", "top: 0px");
-        $("#accessabilityMenu").attr("style", "top: 0px");
+        $("#accessibilityCaller").attr("style", "top: 0px");
+        $("#accessibilityMenu").attr("style", "top: 0px");
     }
 
     $(".date-check").change(function () {
@@ -106,12 +106,12 @@ $(document).ready(function () {
         window.location.href = "consentimento.html";
     });
 
-    // ACCESSABILITY
-    $("#accessabilityCaller").click(function () {
-        $("#accessabilityMenu").show("fast");
+    // accessibility
+    $("#accessibilityCaller").click(function () {
+        $("#accessibilityMenu").show("fast");
     });
-    $("#accessabilityMenu").mouseleave(function() {
-        $("#accessabilityMenu").hide("fast");
+    $("#accessibilityMenu").mouseleave(function() {
+        $("#accessibilityMenu").hide("fast");
     });
 
     $(".font-check").change(function () {
@@ -191,11 +191,11 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() < 96) {
             const marginTop = 112 - $(this).scrollTop();
-            $("#accessabilityCaller").attr("style", `top: ${marginTop}px`);
-            $("#accessabilityMenu").attr("style", `top: ${marginTop}px`);
+            $("#accessibilityCaller").attr("style", `top: ${marginTop}px`);
+            $("#accessibilityMenu").attr("style", `top: ${marginTop}px`);
         } else {
-            $("#accessabilityCaller").attr("style", "top: 0px");
-            $("#accessabilityMenu").attr("style", "top: 0px");
+            $("#accessibilityCaller").attr("style", "top: 0px");
+            $("#accessibilityMenu").attr("style", "top: 0px");
         }
     });
 });

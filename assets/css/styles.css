@@ -2,6 +2,10 @@
 @import url(colors.css);
 @import url(fonts.css);
 
+.icon g {
+    fill: red;
+}
+
 /* ALL ELEMENTS */
 * {
     font-family: var(--font);

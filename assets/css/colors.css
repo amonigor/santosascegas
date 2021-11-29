@@ -9,11 +9,11 @@
     --navbar-background: var(--dark-gray);
     --navbar-text: var(--white);
 
-    /* ACCESSABILITY MENU */
-    --accessability-menu-background1: var(--light-blue);
-    --accessability-menu-background2: var(--white);
-    --accessability-menu-text: var(--white);
-    --accessability-menu-section-background: var(--light-gray2);
+    /* accessibility MENU */
+    --accessibility-menu-background1: var(--light-blue);
+    --accessibility-menu-background2: var(--white);
+    --accessibility-menu-text: var(--white);
+    --accessibility-menu-section-background: var(--light-gray2);
     --font-button-selected: var(--blue);
     --font-option-text: var(--light-gray);
     --font-option-border: var(--light-gray);
@@ -21,9 +21,9 @@
     --font-option-text-selected: var(--white);
     --font-option-border-selected: var(--dark-gray2);
     --font-option-background-selected: var(--gray);
-    --accessability-slider-track: var(--light-gray);
-    --accessability-slider-indicator: var(--white);
-    --accessability-slider-track-fill: var(--light-blue);
+    --accessibility-slider-track: var(--light-gray);
+    --accessibility-slider-indicator: var(--white);
+    --accessibility-slider-track-fill: var(--light-blue);
 
     /* HEADER */
     --email-link: var(--red);
@@ -58,11 +58,11 @@
     --navbar-background: var(--dark-gray);
     --navbar-text: var(--white);
 
-    /* ACCESSABILITY MENU */
-    --accessability-menu-background1: var(--light-blue);
-    --accessability-menu-background2: var(--black);
-    --accessability-menu-text: var(--white);
-    --accessability-menu-section-background: var(--light-black);
+    /* accessibility MENU */
+    --accessibility-menu-background1: var(--light-blue);
+    --accessibility-menu-background2: var(--black);
+    --accessibility-menu-text: var(--white);
+    --accessibility-menu-section-background: var(--light-black);
     --font-button-selected: var(--blue);
     --font-option-text: var(--light-gray);
     --font-option-border: var(--light-gray);
@@ -70,9 +70,9 @@
     --font-option-text-selected: var(--white);
     --font-option-border-selected: var(--dark-gray2);
     --font-option-background-selected: var(--gray);
-    --accessability-slider-track: var(--light-gray);
-    --accessability-slider-indicator: var(--white);
-    --accessability-slider-track-fill: var(--light-blue);
+    --accessibility-slider-track: var(--light-gray);
+    --accessibility-slider-indicator: var(--white);
+    --accessibility-slider-track-fill: var(--light-blue);
 
     /* HEADER */
     --email-link: var(--red);
@@ -107,11 +107,11 @@
     --navbar-background: var(--light-black);
     --navbar-text: var(--yellow);
 
-    /* ACCESSABILITY MENU */
-    --accessability-menu-background1: var(--pink);
-    --accessability-menu-background2: var(--light-black);
-    --accessability-menu-text: var(--black);
-    --accessability-menu-section-background: var(--black);
+    /* accessibility MENU */
+    --accessibility-menu-background1: var(--pink);
+    --accessibility-menu-background2: var(--light-black);
+    --accessibility-menu-text: var(--black);
+    --accessibility-menu-section-background: var(--black);
     --font-button-selected: var(--yellow);
     --font-option-text: var(--pink);
     --font-option-border: var(--pink);
@@ -119,9 +119,9 @@
     --font-option-text-selected: var(--black);
     --font-option-border-selected: var(--pink);
     --font-option-background-selected: var(--pink);
-    --accessability-slider-track: var(--light-black);
-    --accessability-slider-indicator: var(--white);
-    --accessability-slider-track-fill: var(--light-blue);
+    --accessibility-slider-track: var(--light-black);
+    --accessibility-slider-indicator: var(--white);
+    --accessibility-slider-track-fill: var(--light-blue);
 
     /* HEADER */
     --email-link: var(--pink);
