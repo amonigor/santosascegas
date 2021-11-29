@@ -43,6 +43,15 @@ $(document).ready(function () {
         $(document.body).removeClass("default-font-size");
     }
 
+    if ($(window).scrollTop() < 96) {
+        const marginTop = 112 - $(window).scrollTop();
+        $("#accessabilityCaller").attr("style", `top: ${marginTop}px`);
+        $("#accessabilityMenu").attr("style", `top: ${marginTop}px`);
+    } else {
+        $("#accessabilityCaller").attr("style", "top: 0px");
+        $("#accessabilityMenu").attr("style", "top: 0px");
+    }
+
     $(".date-check").change(function () {
         const id = $(this).data("id");
         const idParent = $(this).data("parent");
@@ -177,5 +186,16 @@ $(document).ready(function () {
         $(document.body).removeClass("default-font-size");
         $(document.body).removeClass("large-font-size");
         localStorage.setItem("size", "extra-large");
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 96) {
+            const marginTop = 112 - $(this).scrollTop();
+            $("#accessabilityCaller").attr("style", `top: ${marginTop}px`);
+            $("#accessabilityMenu").attr("style", `top: ${marginTop}px`);
+        } else {
+            $("#accessabilityCaller").attr("style", "top: 0px");
+            $("#accessabilityMenu").attr("style", "top: 0px");
+        }
     });
 });

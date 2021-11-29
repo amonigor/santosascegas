@@ -32,7 +32,7 @@
     <!-- ACCESSABILITY MENU -->
     <button id="accessabilityCaller" class="accessibility-button">
         <i class="fas fa-universal-access me-2"></i>
-        Acessabilidade
+        <p>Acessabilidade</p>
     </button>
     <div id="accessabilityMenu" class="accessability-menu">
         <div class="accessability-menu-title">
@@ -42,7 +42,7 @@
             <div class="accessability-section p-2 mb-2">
                 <p class="accessability-section-title"><i class="fas fa-text-height"></i> Fonte</p>
                 <div class="accessability-option">
-                    <p>estilo:</p>
+                    <p class="option-label">estilo:</p>
 
                     <label id="defaultFontLabel" class="font-option default-font selected" for="defaultFont">padrão</label>
                     <input class="font-check" type="checkbox" name="defaultFont" id="defaultFont" data-type="default">
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="accessability-option">
-                    <p>tamanho:</p>
+                    <p class="option-label">tamanho:</p>
 
                     <button class="font-buttons regular selected" id="regularFont">A</button>
                     <button class="font-buttons large" id="largeFont">A</button>
@@ -63,14 +63,14 @@
             <div class="accessability-section p-2">
                 <p class="accessability-section-title"><i class="fas fa-adjust"></i> Coloração</p>
                 <div class="accessability-option high-contrast">
-                    <p>alto contraste:</p>
+                    <label class="option-label" for="highcontrast">alto contraste:</label>
                     <label class="accessability-switch">
                         <input type="checkbox" name="highcontrast" id="highcontrast">
                         <span class="accessability-slider round"></span>
                     </label>
                 </div>
                 <div class="accessability-option">
-                    <p>modo escuro:</p>
+                    <label class="option-label" for="darkmode">modo escuro:</label>
                     <label class="accessability-switch">
                         <input type="checkbox" name="darkmode" id="darkmode">
                         <span class="accessability-slider round"></span>
