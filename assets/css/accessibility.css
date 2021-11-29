@@ -8,7 +8,7 @@
     margin-right: 1rem;
     right: 0;
     top: 7rem;
-    background-color: var(--accessability-menu-background1);
+    background-color: var(--accessibility-menu-background1);
     padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 10px;
@@ -18,57 +18,57 @@
     align-items: center;
 }
 .accessibility-button i {
-    color: var(--accessability-menu-text);
-    font-size: calc(var(--accessability-text-size) * 2);
+    color: var(--accessibility-menu-text);
+    font-size: calc(var(--accessibility-text-size) * 2);
 }
 .accessibility-button p {
     margin: 0;
     padding: 0;
     font-weight: bold;
-    color: var(--accessability-menu-text);
-    font-size: var(--accessability-text-size);
+    color: var(--accessibility-menu-text);
+    font-size: var(--accessibility-text-size);
 }
 
-.accessability-menu {
+.accessibility-menu {
     position: fixed;
     margin-top: 1rem;
     margin-right: 1rem;
     right: 0;
     top: 7rem;
-    background-color: var(--accessability-menu-background2);
+    background-color: var(--accessibility-menu-background2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     display: none;
 }
 
-.accessability-menu-title {
-    background-color: var(--accessability-menu-background1);
-    color: var(--accessability-menu-text);
+.accessibility-menu-title {
+    background-color: var(--accessibility-menu-background1);
+    color: var(--accessibility-menu-text);
     padding: 0.5rem 1.5rem;
     border-radius: 10px 10px 0 0;
 }
 
-.accessability-menu-title p {
+.accessibility-menu-title p {
     margin: 0;
     width: 100%;
     text-align: center;
     font-weight: bold;
-    color: var(--accessability-menu-text);
-    font-size: var(--accessability-text-size);
+    color: var(--accessibility-menu-text);
+    font-size: var(--accessibility-text-size);
 }
 
-.accessability-menu-title p i {
-    color: var(--accessability-menu-text);
+.accessibility-menu-title p i {
+    color: var(--accessibility-menu-text);
 }
 
-.accessability-section {
-    background-color: var(--accessability-menu-section-background);
+.accessibility-section {
+    background-color: var(--accessibility-menu-section-background);
     border-radius: 10px;
 }
 
-.accessability-section-title {
+.accessibility-section-title {
     font-weight: bolder;
-    font-size: var(--accessability-text-size);
+    font-size: var(--accessibility-text-size);
 }
 
 .default-font {
@@ -79,7 +79,7 @@
     font-family: 'Open Dyslexic' !important;
 }
 
-.accessability-option {
+.accessibility-option {
     display: flex;
     align-items: center;
     margin: 0.5rem 0;
@@ -87,16 +87,16 @@
 
 .option-label {
     margin: 0;
-    font-size: var(--accessability-text-size);
+    font-size: var(--accessibility-text-size);
 }
 
-.accessability-option.high-contrast {
+.accessibility-option.high-contrast {
     background-color: var(--black);
     padding: 0.30rem;
     border-radius: 10px;
 }
 
-.accessability-option.high-contrast .option-label {
+.accessibility-option.high-contrast .option-label {
     color: var(--yellow);
 }
 
@@ -115,7 +115,7 @@
     border: 2px solid var(--font-option-border);
     cursor: pointer;
     font-weight: bold;
-    font-size: var(--accessability-text-size);
+    font-size: var(--accessibility-text-size);
 }
 
 .font-option.selected {
@@ -126,12 +126,12 @@
 
 .font-buttons {
     margin-left: 0.5rem;
-    background-color: var(--accessability-menu-background1);
+    background-color: var(--accessibility-menu-background1);
     border: none;
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    color: var(--accessability-menu-text);
+    color: var(--accessibility-menu-text);
     font-weight: bold;
 }
 .font-buttons.regular {
@@ -147,72 +147,72 @@
     background-color: var(--font-button-selected);
 }
 
-.accessability-switch {
+.accessibility-switch {
     position: relative;
     display: inline-block;
     width: 48px;
     height: 28px;
     margin-left: 0.5rem;
 }
-.accessability-option.high-contrast .accessability-switch {
+.accessibility-option.high-contrast .accessibility-switch {
     height: 30px;
     width: 50px;
 }
 
-.accessability-switch input {
+.accessibility-switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.accessability-slider {
+.accessibility-slider {
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--accessability-slider-track);
+    background-color: var(--accessibility-slider-track);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
 }
-.accessability-option.high-contrast .accessability-switch .accessability-slider {
+.accessibility-option.high-contrast .accessibility-switch .accessibility-slider {
     background-color: var(--black);
     border: 1px solid var(--yellow);
 }
 
-.accessability-slider:before {
+.accessibility-slider:before {
     position: absolute;
     content: "";
     height: 20px;
     width: 20px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--accessability-slider-indicator);
+    background-color: var(--accessibility-slider-indicator);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
 }
-.accessability-option.high-contrast .accessability-switch .accessability-slider:before {
+.accessibility-option.high-contrast .accessibility-switch .accessibility-slider:before {
     background-color: var(--yellow);
 }
 
-.accessability-switch input:checked + .accessability-slider {
-    background-color: var(--accessability-slider-track-fill);
+.accessibility-switch input:checked + .accessibility-slider {
+    background-color: var(--accessibility-slider-track-fill);
 }
-.accessability-option.high-contrast .accessability-switch input:checked + .accessability-slider {
+.accessibility-option.high-contrast .accessibility-switch input:checked + .accessibility-slider {
     background-color: var(--yellow);
 }
-.accessability-option.high-contrast .accessability-switch input:checked + .accessability-slider:before {
+.accessibility-option.high-contrast .accessibility-switch input:checked + .accessibility-slider:before {
     background-color: var(--black);
 }
 
-.accessability-switch input:focus + .accessability-slider {
-    box-shadow: 0 0 1px var(--accessability-slider-track-fill);
+.accessibility-switch input:focus + .accessibility-slider {
+    box-shadow: 0 0 1px var(--accessibility-slider-track-fill);
 }
 
-.accessability-switch input:checked + .accessability-slider:before {
+.accessibility-switch input:checked + .accessibility-slider:before {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
